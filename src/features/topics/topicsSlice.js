@@ -20,9 +20,7 @@ export const topicsSlice = createSlice({
     }
 })
 
-export const topicsSelector = (initialState) => {
-    initialState.topics
-}
+export const topicsSelector = state => state.topics.topics;
 
 export const { addTopic } = topicsSlice.actions;
 
