@@ -19,7 +19,7 @@ const cardsSlice = createSlice({
     }
 });
 
-export const cardIdSelector = id => state.cards.cards[id];
+export const cardIdSelector = (state, id) => state.cards.cards[id];
 
 export const { addCard } = cardsSlice.actions;
 
