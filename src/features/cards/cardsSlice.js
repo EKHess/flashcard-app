@@ -32,16 +32,20 @@ const cardsSlice = createSlice({
 //   }
 // }
 // Using an input of a cards 'id', return that specific card from state using createSelector()
-export const cardIdSelector = createSelector(
-    [
-        // Usual first input - extract value from `state`
-        state => state.cards.cards,
-        // Take the second arg, `id`, and forward to the output selector
-        (state, id) => id
-    ],
-    // Output selector gets (`cards, id)` as args
-    (cards, id) => cards[id]
-)
+// export const cardIdSelector = createSelector(
+//     [
+//         // Usual first input - extract value from `state'
+//         state => state.cards.cards,
+//         // Take the second arg, `id`, and forward to the output selector
+//         (state, id) => id
+//     ],
+//     // Output selector gets (`cards, id)` as args
+//     (cards, id) => cards[id]
+// )
+
+export const cardsSelector = state => state.cards.cards;
+
+export const cardIdSelector = (cards, id) => cards[id];
 
 export const { addCard } = cardsSlice.actions;
 
