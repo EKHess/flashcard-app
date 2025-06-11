@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Flashcards
+## Description
+A simple front-end application to create and manage sets of flashcard quizzes for studying.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Users can create topics, create flashcard quizzes and assign them to topics to keep them organized. 
 
-## Available Scripts
+In each flashcard quiz, you'll be presented with the front of a card. Try to recall the information stored on the back. Once you're ready to check your memory, click the card to "flip" it around, and see how you did!
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
+- Reactive flashcards that "flip" between the front prompt, and back content on-click. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Fully customizable topics and quiz creation lets you study anything you want, and keep your quizzes organized.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## How to use
+### Users
+Head to *insert link* to try the app on the web!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Developers
+Simply `git clone` this public GitHub repo to your machine and play around!
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
+- This project was bootstrapped using [`create-react-app` created by Facebook](https://create-react-app.dev/docs/getting-started/). 
+    - State management for card "flipping" handled using `useSelector` and `useState()`
+    - Navigation between features powered by a `BroswerRouter` provided by `react-router-dom` allows for in-app navigation without browser refreshes
+- Core technologies: 
+    - `node` v20.11.1
+    - `npm` 10.2.4
+    - `git` 2.43.0 (for version control)
+    - VSCode editor for developement
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License & Copyright
+This project is not open-source, and has no open-source liscense, "meaning that [I, Eric Hess] retain all rights to [my] source code and no one may reproduce, distribute, or create derivative works from [my] work," according to [GitHub's Liscensing Guidelines.](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is intended to be a portfolio project for me, and possibly a reference for any other Codecademy students interested in seeing how I completed the project. 
